@@ -47,11 +47,11 @@
         <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Виды массажа</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Обучение</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Сертфикаты</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Про меня</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
+                    <li class="menu_item"><a href="#view" class="menu_link">Услуги массажа</a></li>
+                    <li class="menu_item"><a href="#lern" class="menu_link">Обучение</a></li>
+                    <li class="menu_item"><a href="#sertif" class="menu_link">Про меня</a></li>
+                    <li class="menu_item"><a href="#me" class="menu_link">Сертфикаты</a></li>
+                    <li class="menu_item"><a href="#ring" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -74,8 +74,7 @@
                     </div>
     
                     <div class="col-6 col-md-3">
-                        <a href="tel:84957970988" class="xs-visible subheader_phone">+7 777 972 49 85</a>
-                        <button class="subheader_btn">заказать звонок</button>
+                        <button name="write" class="j-submit-report subheader_btn" onclick="window.location.href='tel:84957970988'">Позвонить мне</button>  
                     </div>
                 </div>
             </div>
@@ -221,7 +220,7 @@
         </div>
     </section>
 
-    <section class="mobile">
+    <section class="mobile" id="view">
         <div class="container">
             <h2 class="title">услуги массажа</h2>
             <div class="subtitle">Выбирите услугу, совершите звонок и запишитесь на прием, используя свой мобильный телефон</div>
@@ -344,7 +343,7 @@
         </div>
     </section>
 
-    <section class="require" id="require">
+    <section class="require" id="lern">
         <div class="container">
             <h2 class="title">обучение массажу</h2>
         <div class="row">
@@ -384,7 +383,7 @@
         </div>
     </section>
 
-    <section class="Sh_T_A" id="require">
+    <section class="Sh_T_A" id="me">
         <div class="container">
             <h2 class="title">массаж проводит опытный специалист</h2>
         <div class="row">
@@ -449,7 +448,7 @@
         </div>
     </section>
 
-    <section class="wating">
+    <section class="wating" id="sertif">
         <div class="container">
             <h2 class="wating_header">Порадуй себя и своих близких</h2>
             <div class="waiting_divider"></div>
@@ -480,14 +479,14 @@
         </div>
     </section>
 
-    <footer style="background-image: linear-gradient(to top, #24d459b7 20%, #efefef 80%)">
+    <footer style="background-image: linear-gradient(to top, #24d459b7 20%, #efefef 80%)" id="ring" id="ringi">
         <div class="footer_divider"></div>
         <class class="footer_wrapper">
             <!-- Если не оборачивать каждый блок в обертку - получится криво -->
             
             <div>
                 <div class="footer_social scale">
-                    <a href="#" class="footer_social_item">
+                    <a href="https://www.instagram.com/massage_kostanay_tatyana/" class="footer_social_item">
                         <img src="icons/instagram.png">
                     </a>
                 </div>
@@ -536,7 +535,8 @@
                           <div class="mouth-wrapper">
                             <div class="mouth"></div>
                           </div>
-                        </div><a class="call-to-action" href="">Подарок</a>
+                        </div>
+                        <a class="call-to-action" href="#ringi" onclick="alert('Ваш подарочный код <MASSAGE> дает 10% скидку на любой массаж')">Подарок</a>
                       </div>
                 </div>
             </div>
